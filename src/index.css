@@ -11,8 +11,8 @@ body {
 .app{
   background-image: url('./assets/cold-bg.jpg');
   background-size:cover;
-  background-position:bottom;
-  transition: 0.4 ease-out;
+  background-position:top;
+  transition: .4s ease;
 }
 
 .app.warn{
@@ -43,11 +43,14 @@ main{
   background-color: rgba(255,255,255,0.5);
   border-radius: 16px;
 
-  box-shadow:9px 9px 16px rgba(163,177,198,.6),-9px -9px 16px rgba(163,177,198,.6) !important;
+  box-shadow:2px 2px 16px rgba(163,177,198,.6),-2px -2px 16px rgba(163,177,198,.6) !important;
   color:#313131;
   font-size:20px;
-
   transition: 0.4s ease;
+}
+
+.search-box .search-bar.search-warn{
+  box-shadow:0px 0px 5px #ff65de,0px 0px 5px #ff65de !important;
 }
 
 .search-box .search-bar:focus{
@@ -82,14 +85,18 @@ main{
   background-color: rgba(255,255,255,0.2);
   border-radius: 16px;
 
-  padding:15px 25px;
+  padding:15px 15px;
   color:#ffffff;
 
   font-size:100px;
   font-weight:900;
   text-shadow:3px 6px rgba(50,50,70,0.5);
   text-align: center;
-  box-shadow:4px 4px 5px rgba(163,177,198,.6),-4px -4px 5px rgba(163,177,198,.6) !important;
+  box-shadow:2px 2px 16px rgba(163,177,198,.6),-2px -2px 16px rgba(163,177,198,.6) !important;
+}
+
+.weather-box .temp.temp-warn{
+  box-shadow:2px 2px 16px rgb(195, 76, 192),-2px -2px 16px rgb(195, 76, 192) !important;
 }
 
 .weather-box .weather{
@@ -97,4 +104,11 @@ main{
   font-size:48px;
   font-weight:700;
   text-shadow:3px 6px rgba(50,50,70,0.5);
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+ .app{
+  background-position:bottom;
+ } 
 }
