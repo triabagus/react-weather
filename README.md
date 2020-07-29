@@ -29,14 +29,11 @@ npm start
 make new file .env
 ```bash
 REACT_APP_KEY_WEATHER=YOUR-KEY-WEATHER
+```
 
 # Deploy
 - [If you error this is solution first deploy because CI build configuration](https://community.netlify.com/t/new-ci-true-build-configuration-treating-warnings-as-errors-because-process-env-ci-true/14434)
 - Create Env variable in Build & Deploy Setting, make sure the env variable is the same as the key Open Weather API.
-
-# Package
-```bash
-```
 
 # Helper
 - [API: Open Weather Map](https://openweathermap.org/api)
